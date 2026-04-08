@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "build opgave3",
+			"command": "${workspaceFolder}/cobbuild.bat",
+			"args": [
+				"-x",
+				"opgave3.cob",
+				"-o",
+				"opgave3.exe"
+			],
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "silent"
+			}
+		}
+	]
+}

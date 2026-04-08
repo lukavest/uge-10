@@ -1,0 +1,49 @@
+       IDENTIFICATION DIVISION. 
+       PROGRAM-ID. OPG-3A.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION. 
+       01  KUNDE-ID     PIC X(10) VALUE SPACES.
+       01  FORNAVN      PIC X(20) VALUE SPACES.
+       01  EFTERNAVN    PIC X(20) VALUE SPACES.
+
+       01  KONTO-NUMMER PIC X(20) VALUE SPACES.
+       01  BALANCE      PIC 9(7)V9(2) VALUE 0.
+       01  VALUTAKODE   PIC X(3) VALUE SPACES.
+
+       01  IX           PIC 9(2) VALUE 0.
+       01  IX2          PIC 9(2) VALUE 0.
+       01  CHAR-CURRENT PIC X VALUE SPACE.
+       01  CHAR-LAST    PIC X VALUE SPACE.
+       01  NAVN-PADDED    PIC X(41) VALUE SPACES.
+       01  NAVN           PIC X(41) VALUE SPACES.
+
+       PROCEDURE DIVISION.
+           MOVE "1234567890" TO KUNDE-ID.
+           MOVE "Lars" TO FORNAVN.
+           MOVE "Hansen" TO EFTERNAVN.
+           MOVE "DK12345678912345" TO KONTO-NUMMER.
+           MOVE 2500.75 TO BALANCE.
+           MOVE "DKK" TO VALUTAKODE.
+
+           STRING FORNAVN DELIMITED BY SIZE " "
+              DELIMITED BY SIZE EFTERNAVN 
+              DELIMITED BY SIZE
+              INTO NAVN-PADDED.
+
+           PERFORM A-PARA UNTIL IX > 40.
+
+           DISPLAY "Kunde-ID: "    KUNDE-ID.
+           DISPLAY "Navn: "        NAVN.
+           DISPLAY "Kontonummer: " KONTO-NUMMER.
+           DISPLAY "Balance: "     VALUTAKODE " " BALANCE.
+
+           STOP RUN.
+
+       A-PARA.
+           MOVE NAVN-PADDED(IX:1) TO CHAR-CURRENT.
+           IF CHAR-CURRENT  NOT = SPACE OR CHAR-LAST NOT = SPACE THEN
+                  MOVE CHAR-CURRENT TO NAVN(IX2:1)
+                  ADD 1 TO IX2.
+           MOVE CHAR-CURRENT TO CHAR-LAST.
+           ADD 1 TO IX.
