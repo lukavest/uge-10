@@ -10,11 +10,11 @@ def generate_random_cpr():
     control_number = f"{random.randint(1000, 9999):04d}"  # Tilfældig 4-cifret kontrolnummer
     return f"{day}{month}{year}{control_number}"
 
-def generate_kundeoplysninger(kundefil,kontofil, num_records):
+def generate_kundeoplysninger(kundefil,kontofil, num_kunder):
     sider = ["th","tv"]
 
     with open(kundefil, "w") as f1, open(kontofil, "w") as f2:
-        for _ in range(num_records):
+        for _ in range(num_kunder):
             kunde_id = generate_random_cpr()
             fornavn = fake.first_name()
             efternavn = fake.last_name()
@@ -92,4 +92,4 @@ def generate_kundeoplysninger(kundefil,kontofil, num_records):
                 balance_int = int(random.randint(0,9999999) * random.random())
                 balance_frac = random.randint(0,99)
 
-generate_kundeoplysninger("cobol-code/Kundeoplysninger.txt","cobol-code/KontoOpl.txt", 10)
+generate_kundeoplysninger("../data/Kundeoplysninger.txt","../data/KontoOpl.txt", 10)

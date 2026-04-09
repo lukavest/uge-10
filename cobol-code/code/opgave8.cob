@@ -4,11 +4,11 @@
        environment division.
        input-output section.
        file-control.
-           select fil-kunder assign to "Kundeoplysninger.txt"
+       select fil-kunder assign to "../data/Kundeoplysninger.txt"
                organization is line sequential.
-           select fil-konti assign to "KontoOpl.txt"
+           select fil-konti assign to "../data/KontoOpl.txt"
                organization is line sequential.
-           select fil-out assign to "KUNDEKONTO.txt"
+           select fil-out assign to "../data/KUNDEKONTO.txt"
                organization is line sequential.
               
        data division.
@@ -17,11 +17,11 @@
        file section.
        fd fil-kunder.
        01 kunde-opl.
-           copy "KUNDER.cpy".
+           copy "../data/KUNDER.cpy".
        
        fd fil-konti.
        01 konto-rekord.
-           copy "KONTOOPL.cpy".
+           copy "../data/KONTOOPL.cpy".
 
        fd fil-out.
        01 kundekonto.

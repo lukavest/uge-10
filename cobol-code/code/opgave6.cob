@@ -4,14 +4,14 @@
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
-              SELECT KUNDE-FIL ASSIGN TO "Kundeoplysninger.txt"
+       SELECT KUNDE-FIL ASSIGN TO "../data/Kundeoplysninger.txt"
                 ORGANIZATION IS LINE SEQUENTIAL.
 
        DATA DIVISION.
        FILE SECTION.
        FD KUNDE-FIL.
        01 KUNDE-OPL.
-           COPY "KUNDER.cpy".
+           COPY "../data/KUNDER.cpy".
 
        WORKING-STORAGE SECTION. 
        01 EOF-FLAG PIC X VALUE "N".

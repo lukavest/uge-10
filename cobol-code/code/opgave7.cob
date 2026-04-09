@@ -4,9 +4,9 @@
        environment division.
        input-output section.
        file-control.
-           select fil-in assign to "Kundeoplysninger.txt"
+           select fil-in assign to "../data/Kundeoplysninger.txt"
                organization is line sequential.
-           select fil-out assign to "KunderReadable.txt"
+           select fil-out assign to "../data/KunderReadable.txt"
                organization is line sequential.
               
        data division.
@@ -15,7 +15,7 @@
        file section.
        fd fil-in.
        01 kunde-opl.
-           copy "KUNDER.cpy".
+           copy "../data/KUNDER.cpy".
        
        fd fil-out.
        01 kunde-adr.
