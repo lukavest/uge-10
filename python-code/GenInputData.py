@@ -1,5 +1,8 @@
 import random
 import datetime
+import os
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 # Antal kunder i dataset
 NUM_CUSTOMERS = 10000
@@ -11,8 +14,10 @@ MAX_TRANSACTIONS_PER_CUSTOMER = 10
 NUM_BANKS = 100
 
 # Filnavne til outputfiler
-TRANSACTION_FILE = "Transaktioner.txt"
-BANK_FILE = "Banker.txt"
+TRANSACTION_FILE = os.path.join(dir_path, "../cobol-code/data/Transaktioner.txt")
+# TRANSACTION_FILE =  "../cobol-code/data/Transaktioner.txt"
+BANK_FILE = os.path.join(dir_path, "../cobol-code/data/Banker.txt")
+# BANK_FILE = "../cobol-code/data/Banker.txt"
 
 # Fiktive navne til generering
 FIRST_NAMES = ["Lars", "Mette", "Jens", "Anne", "Peter", "Marie", "Søren", "Hanne", "Niels", "Camilla"]
@@ -85,21 +90,23 @@ def generate_bank_data():
 
 # Generér bankfil
 bank_data = generate_bank_data()
-with open(BANK_FILE, "w") as bank_file:
+# with open(BANK_FILE, "w") as bank_file:
+with open(BANK_FILE, "w", encoding="cp1252") as bank_file:
     for reg_number, bank_name, bank_address, phone_number, email in bank_data:
         bank_record = (
             f"{reg_number:<4}"         # Registreringsnummer (4 tegn)
             f"{bank_name:<30}"         # Banknavn (30 tegn)
             f"{bank_address:<50}"      # Bankadresse (50 tegn)
             f"{phone_number:<15}"      # Telefonnummer (15 tegn)
-            f"{email:<30}"             # Emailadresse (30 tegn)
+            f"{email:<40}"             # Emailadresse (*40 tegn)
         )
         bank_file.write(bank_record + "\n")
 
 # Generér transaktionsfil
 bank_registrations = [bank[0] for bank in bank_data]  # Liste med alle registreringsnumre fra bankfilen
 
-with open(TRANSACTION_FILE, "w") as file:
+# with open(TRANSACTION_FILE, "w") as file:
+with open(TRANSACTION_FILE, "w", encoding="cp1252") as file:
     for i in range(1, NUM_CUSTOMERS + 1):  # Loop over kunder
         cpr, fødselsdato = generate_cpr()  # Generér CPR og fødselsdato
         konto_nummer = generate_account_number()  # Generér kontonummer

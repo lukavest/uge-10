@@ -14,7 +14,7 @@ Lauren Lake 186
 rileykaren@example.net
 3473040986 Budgetkonto 230938316 IDR
 0601628965 NemKonto 114928413 IDR
-9502094801 Børneopsparing  IDR
+9502094801 Børneopsparing 55395321 IDR
 
 2501828567
 Natalie Calhoun
@@ -22,7 +22,7 @@ Sara Plains 7585
 5813 Shelbymouth
 31074386
 rick29@example.net
-7487602163 Studiekonto  EGP
+7487602163 Studiekonto 76676440 EGP
 6215834924 Fælleskonto 605191490 EGP
 
 2204848289
@@ -72,8 +72,8 @@ Brett Crest 9262
 3390 Rachelhaven
 32400828
 jennifercole@example.net
-1133417156 Opsparingskonto  SLL
-3417717081 Studiekonto  SLL
+1133417156 Opsparingskonto 54776461 SLL
+3417717081 Studiekonto 88200915 SLL
 
 0610537021
 Cindy Stevens
@@ -81,5 +81,5 @@ Hansen Shoal 58642
 7457 Mcdonaldview
 58094045
 ronald76@example.com
-5581600072 Fælleskonto  ANG
+5581600072 Fælleskonto 10342457 ANG
 
