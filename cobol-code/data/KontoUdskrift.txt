@@ -1,0 +1,86 @@
+-------------------------------
+Kunde:         Lars Mortensen
+Adresse:       Vesterbrogade 310A, 4700 Næstved
+                              Reg.nr.:       0009
+                              Bankadresse:   Nørreport 512A, 3000 Odense
+                              Telefon:       +45 71780174
+                              E-mail:        kontakt@handelsbanken.dk
+Kontoudskrift for kontonr.: 916-55-26649
+2022-05-08 02.53.44Overførsel                -8773.54DKK Boghandel
+2025-05-30 08.57.08Overførsel               -93156.02USD Møbelbutik
+2022-02-10 21.35.41Udbetaling                55482.43USD Apotek
+2025-06-24 04.03.08Udbetaling               -93057.49DKK Café
+-------------------------------
+Kunde:         Mette Mortensen
+Adresse:       Hovedgaden 674C, 8900 Næstved
+                              Reg.nr.:       0059
+                              Bankadresse:   Vesterbrogade 471, 8900 Odense
+                              Telefon:       +45 35101905
+                              E-mail:        kontakt@sparnordbank.dk
+Kontoudskrift for kontonr.: 225-51-68187
+2020-01-31 18.11.14Indbetaling              -84938.77USD Møbelbutik
+-------------------------------
+Kunde:         Søren Thomsen
+Adresse:       Amagerbrogade 133, 8900 Odense
+                              Reg.nr.:       0044
+                              Bankadresse:   Nørreport 871A, 8000 Roskilde
+                              Telefon:       +45 49183846
+                              E-mail:        kontakt@nordea.dk
+Kontoudskrift for kontonr.: 675-37-53772
+2024-08-16 19.31.00Overførsel               -85742.58EUR Møbelbutik
+2020-06-04 13.42.51Udbetaling                -4139.67EUR Apotek
+2020-12-17 13.27.40Overførsel                 8410.79DKK Supermarked
+2025-01-28 10.01.01Indbetaling              -39264.55EUR Tankstation
+2023-10-28 19.52.00Udbetaling               -35427.31DKK Biograf
+-------------------------------
+Kunde:         Peter Olsen
+Adresse:       Hovedgaden 784B, 5000 Helsingør
+                              Reg.nr.:       0004
+                              Bankadresse:   Østerbrogade 258A, 9000 Vejle
+                              Telefon:       +45 53034112
+                              E-mail:        kontakt@jyskebank.dk
+Kontoudskrift for kontonr.: 338-85-33772
+2022-02-10 10.38.28Overførsel                96760.20EUR Bageri
+2022-11-14 23.31.24Overførsel                53104.37DKK Bageri
+2020-05-02 17.13.35Indbetaling               87278.93USD Café
+2024-06-14 23.06.50Overførsel                47271.12EUR Bageri
+2023-10-20 07.15.04Indbetaling              -41225.60USD Tøjbutik
+-------------------------------
+Kunde:         Niels Pedersen
+Adresse:       Østerbrogade 9B, 8000 København
+                              Reg.nr.:       0092
+                              Bankadresse:   Østerbrogade 279C, 9000 Næstved
+                              Telefon:       +45 90955069
+                              E-mail:        kontakt@nykreditbank.dk
+Kontoudskrift for kontonr.: 786-52-33513
+2024-08-01 17.58.45Indbetaling                3597.24DKK Café
+2025-02-03 03.02.47Overførsel                16853.24EUR Blomsterhandler
+2020-10-12 16.41.42Indbetaling              -94185.94DKK Biograf
+2025-02-27 11.18.05Overførsel                77983.63EUR Fitnesscenter
+2021-08-21 13.03.51Overførsel               -75946.01EUR Supermarked
+-------------------------------
+Kunde:         Peter Olsen
+Adresse:       Nørreport 36B, 5000 Aarhus
+                              Reg.nr.:       0085
+                              Bankadresse:   Vesterbrogade 588C, 5000 Roskilde
+                              Telefon:       +45 65378702
+                              E-mail:        kontakt@sparnordbank.dk
+Kontoudskrift for kontonr.: 216-78-80407
+2022-01-05 09.31.44Udbetaling               -32148.68EUR Elektronikbutik
+2024-02-02 08.44.07Overførsel                60829.99DKK Boghandel
+2024-10-13 01.30.25Udbetaling               -96021.07USD Blomsterhandler
+2020-07-28 16.29.28Overførsel                 6498.08EUR Supermarked
+2021-02-21 01.36.20Indbetaling                8722.30USD Tankstation
+2021-08-29 15.54.24Indbetaling               56842.63USD Fitnesscenter
+-------------------------------
+Kunde:         Anne Larsen
+Adresse:       Østerbrogade 684B, 3000 Roskilde
+                              Reg.nr.:       0035
+                              Bankadresse:   Amagerbrogade 366C, 2100 København
+                              Telefon:       +45 58624310
+                              E-mail:        kontakt@sparnordbank.dk
+Kontoudskrift for kontonr.: 627-84-25457
+2022-08-09 04.02.24Udbetaling               -19186.31DKK Supermarked
+2025-06-06 17.07.46Indbetaling              -52823.45DKK Biograf
+2022-11-27 03.03.15Udbetaling               -71154.99DKK Møbelbutik
+2022-01-23 21.47.05Indbetaling               37684.93USD Café

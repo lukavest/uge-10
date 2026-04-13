@@ -7,4 +7,11 @@
 
        PROCEDURE DIVISION.
        DISPLAY VAR-TEXT.
+       IF "A" NOT = "B"
+           DISPLAY "A er ikke lig med B"
+       END-IF
+       IF "A" NOT = "A"
+           DISPLAY "A er ikke lig med A"
+       END-IF
+
        STOP RUN.

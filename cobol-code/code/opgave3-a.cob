@@ -8,7 +8,7 @@
        01  EFTERNAVN    PIC X(20) VALUE SPACES.
 
        01  KONTO-NUMMER PIC X(20) VALUE SPACES.
-       01  BALANCE      PIC 9(7)V9(2) VALUE 0.
+       01  BALANCE      PIC 9(7)V99 VALUE 0.
        01  VALUTAKODE   PIC X(3) VALUE SPACES.
 
        01  IX           PIC 9(2) VALUE 0.

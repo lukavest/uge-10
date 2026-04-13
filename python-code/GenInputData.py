@@ -5,7 +5,7 @@ import os
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 # Antal kunder i dataset
-NUM_CUSTOMERS = 10000
+NUM_CUSTOMERS = 1000
 
 # Maks antal transaktioner pr. kunde
 MAX_TRANSACTIONS_PER_CUSTOMER = 10
@@ -41,6 +41,8 @@ BANK_NAMES = ["Danske Bank", "Nordea", "Jyske Bank", "Sydbank", "Nykredit Bank",
 VALUTA_CODES = ["DKK", "USD", "EUR"]
 TRANSACTION_TYPES = ["Indbetaling", "Udbetaling", "Overførsel"]
 
+ENCODING =  "cp1252"  # Windows-1252 encoding for Danish characters
+
 # Funktion til generering af en fødselsdato og CPR-lignende nummer
 def generate_cpr():
     start_date = datetime.date(1950, 1, 1)
@@ -74,7 +76,7 @@ def generate_transaction_timestamp():
     delta = end_date - start_date
     random_seconds = random.randint(0, int(delta.total_seconds()))  # Konverter til int
     transaction_timestamp = start_date + datetime.timedelta(seconds=random_seconds)
-    return transaction_timestamp.strftime("%Y-%m-%d-%H.%M.%S.%f")  # Timestamp i ønsket format
+    return transaction_timestamp.strftime("%Y-%m-%d-%H.%M.%S.%f")  # Timestamp i ønsket format # Timestamp i formatet YYYY-MM-DD-HH.MM.SS.MMMMMM
 
 # Funktion til generering af bankoplysninger
 def generate_bank_data():
@@ -88,56 +90,63 @@ def generate_bank_data():
         bank_data.append((reg_number, bank_name, bank_address, phone_number, email))
     return bank_data
 
-# Generér bankfil
-bank_data = generate_bank_data()
-# with open(BANK_FILE, "w") as bank_file:
-with open(BANK_FILE, "w", encoding="cp1252") as bank_file:
-    for reg_number, bank_name, bank_address, phone_number, email in bank_data:
-        bank_record = (
-            f"{reg_number:<4}"         # Registreringsnummer (4 tegn)
-            f"{bank_name:<30}"         # Banknavn (30 tegn)
-            f"{bank_address:<50}"      # Bankadresse (50 tegn)
-            f"{phone_number:<15}"      # Telefonnummer (15 tegn)
-            f"{email:<40}"             # Emailadresse (*40 tegn)
-        )
-        bank_file.write(bank_record + "\n")
-
-# Generér transaktionsfil
-bank_registrations = [bank[0] for bank in bank_data]  # Liste med alle registreringsnumre fra bankfilen
-
-# with open(TRANSACTION_FILE, "w") as file:
-with open(TRANSACTION_FILE, "w", encoding="cp1252") as file:
-    for i in range(1, NUM_CUSTOMERS + 1):  # Loop over kunder
-        cpr, fødselsdato = generate_cpr()  # Generér CPR og fødselsdato
-        konto_nummer = generate_account_number()  # Generér kontonummer
-        reg_nummer = random.choice(bank_registrations)  # Vælg et tilfældigt registreringsnummer fra bankfilen
-        navn = f"{random.choice(FIRST_NAMES)} {random.choice(LAST_NAMES)}"  # Fiktivt navn
-        adresse = generate_address()  # Generér adresse
-
-        # Generér et tilfældigt antal transaktioner for denne kunde
-        num_transactions = random.randint(1, MAX_TRANSACTIONS_PER_CUSTOMER)
-        for _ in range(num_transactions):  # Loop over kundens transaktioner
-            transaktions_beløb = round(random.uniform(-100000.00, 100000.00), 2)  # Tilfældig beløb
-            valutakode = random.choice(VALUTA_CODES)  # Tilfældig valutakode
-            transaktions_type = random.choice(TRANSACTION_TYPES)  # Tilfældig type
-            butik = random.choice(STORES)  # Tilfældig butik
-            timestamp = generate_transaction_timestamp()  # Timestamp i formatet YYYY-MM-DD-HH.MM.SS.MMMMMM
-
-            # Formatér feltet til faste kolonner
-            record = (
-                f"{cpr:<15}"             # Kundenummer (CPR-format)
-                f"{navn:<30}"            # Navn
-                f"{adresse:<50}"         # Adresse
-                f"{fødselsdato:<11}"     # Fødselsdato (10 tegn + 1 mellemrum)
-                f"{konto_nummer:<14}"    # Kontonummer (12 tegn + 2 mellemrum)
-                f"{reg_nummer:<6}"       # Registreringsnummer
-                f"{transaktions_beløb:>15.2f}"  # Højrestil beløb
-                f"{valutakode:<4}"       # Valutakode
-                f"{transaktions_type:<20}"  # Transaktionstype
-                f"{butik:<20}"           # Butik
-                f"{timestamp:<26}"       # Timestamp
+def gen_data():
+    # Generér bankfil
+    bank_data = generate_bank_data()
+    # with open(BANK_FILE, "w") as bank_file:
+    with open(BANK_FILE, "w", encoding=ENCODING) as bank_file:
+        for reg_number, bank_name, bank_address, phone_number, email in bank_data:
+            bank_record = (
+                f"{reg_number:<4}"         # Registreringsnummer (4 tegn)
+                f"{bank_name:<30}"         # Banknavn (30 tegn)
+                f"{bank_address:<50}"      # Bankadresse (50 tegn)
+                f"{phone_number:<15}"      # Telefonnummer (15 tegn)
+                f"{email:<40}"             # Emailadresse (*40 tegn)
             )
-            file.write(record + "\n")  # Skriv til fil og tilføj ny linje
+            bank_file.write(bank_record + "\n")
 
-print(f"Dataset med {NUM_CUSTOMERS} kunder og op til {MAX_TRANSACTIONS_PER_CUSTOMER * NUM_CUSTOMERS} transaktioner er genereret i filen '{TRANSACTION_FILE}'")
-print(f"Bankdata genereret i filen '{BANK_FILE}'")
+    # Generér transaktionsfil
+    bank_registrations = [bank[0] for bank in bank_data]  # Liste med alle registreringsnumre fra bankfilen
+
+    # with open(TRANSACTION_FILE, "w") as file:
+    with open(TRANSACTION_FILE, "w", encoding=ENCODING) as file:
+        for i in range(1, NUM_CUSTOMERS + 1):  # Loop over kunder
+            cpr, fødselsdato = generate_cpr()  # Generér CPR og fødselsdato
+            konto_nummer = generate_account_number()  # Generér kontonummer
+            reg_nummer = random.choice(bank_registrations)  # Vælg et tilfældigt registreringsnummer fra bankfilen
+            navn = f"{random.choice(FIRST_NAMES)} {random.choice(LAST_NAMES)}"  # Fiktivt navn
+            adresse = generate_address()  # Generér adresse
+
+            # Generér et tilfældigt antal transaktioner for denne kunde
+            num_transactions = random.randint(1, MAX_TRANSACTIONS_PER_CUSTOMER)
+            for _ in range(num_transactions):  # Loop over kundens transaktioner
+                transaktions_beløb = round(random.uniform(-100000.00, 100000.00), 2)  # Tilfældig beløb
+                # beløb_int = random.randint(-100000,100000)
+                # beløb_frac = random.randint(0, 99)
+                valutakode = random.choice(VALUTA_CODES)  # Tilfældig valutakode
+                transaktions_type = random.choice(TRANSACTION_TYPES)  # Tilfældig type
+                butik = random.choice(STORES)  # Tilfældig butik
+                timestamp = generate_transaction_timestamp()  # Timestamp i formatet YYYY-MM-DD-HH.MM.SS.MMMMMM
+
+                # Formatér feltet til faste kolonner
+                record = (
+                    f"{cpr:<15}"             # Kundenummer (CPR-format)
+                    f"{navn:<30}"            # Navn
+                    f"{adresse:<50}"         # Adresse
+                    f"{fødselsdato:<11}"     # Fødselsdato (10 tegn + 1 mellemrum)
+                    f"{konto_nummer:<14}"    # Kontonummer (12 tegn + 2 mellemrum)
+                    f"{reg_nummer:<6}"       # Registreringsnummer
+                    f"{transaktions_beløb:>14.2f}"    # Højrestil beløb
+                    # f"{beløb_int:>11d}{beløb_frac:02}"   # Beløb som heltal + 2 decimaler
+                    f"{valutakode:<4}"       # Valutakode
+                    f"{transaktions_type:<20}"  # Transaktionstype
+                    f"{butik:<20}"           # Butik
+                    f"{timestamp:<26}"       # Timestamp
+                )
+                file.write(record + "\n")  # Skriv til fil og tilføj ny linje
+
+    print(f"Dataset med {NUM_CUSTOMERS} kunder og op til {MAX_TRANSACTIONS_PER_CUSTOMER * NUM_CUSTOMERS} transaktioner er genereret i filen '{TRANSACTION_FILE}'")
+    print(f"Bankdata genereret i filen '{BANK_FILE}'")
+    
+    
+gen_data()
