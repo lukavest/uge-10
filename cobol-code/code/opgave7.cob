@@ -15,7 +15,7 @@
        file section.
        fd fil-in.
        01 kunde-opl.
-           copy "../data/KUNDER.cpy".
+           copy "../copybooks/KUNDER.cpy".
        
        fd fil-out.
        01 kunde-adr.

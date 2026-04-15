@@ -16,13 +16,11 @@
       *01 VAR-TEXT PIC N(30) USAGE NATIONAL.
       *01 TST  PIC X(100).
        
-      *01 A PIC S9(13) SIGN IS LEADING SEPARATE CHARACTER.
-      *01 B PIC S9(13) SIGN IS LEADING SEPARATE CHARACTER.
-      *01 C PIC S9(13) SIGN IS LEADING SEPARATE CHARACTER.
-       01 A PIC 9V99.
-       01 B PIC S9(10)V99.
-       01 C PIC -ZZZ,ZZZ,ZZ9.99.
-      *01 P PIC Z(11)V99.
+       01 A PIC S9(10)V99 VALUE ZEROS.
+       01 B PIC S9(10)V99 VALUE ZEROS.
+       01 C PIC S9(10)V99 VALUE ZEROS.
+
+       01 P PIC ZZZZZZZZZ9.99.
 
        PROCEDURE DIVISION.
       *    DISPLAY "Danish characters: Æ, Ø, Å, æ, ø, å"
@@ -34,15 +32,28 @@
       *    WRITE KONTOUDSKRIFT
       *    CLOSE FIL-OUT
 
-           MOVE "2.5" TO A
-           MOVE "500.60" TO B
-           DISPLAY A
-           DISPLAY B
+           MOVE "96760.20" TO A
+           MOVE "-41225.60" TO B
+           MOVE A TO P
+           DISPLAY P " " A
+           MOVE B TO P
+           DISPLAY P " " B
            
-      *    ADD A TO B GIVING C
+           ADD A TO B
+           MOVE B TO P
       *    MOVE FUNCTION SUM(A, B) TO C
-           MULTIPLY A BY B GIVING C
-           DISPLAY C
+           DISPLAY P " " B
+      *    DISPLAY FUNCTION SUM(A, B)
+           
+           MOVE "-41225.60" TO P
+           IF P < 0
+               DISPLAY P " < 0"
+           END-IF
+
+           IF P > 0
+               DISPLAY P " > 0"
+           END-IF
+               
            
 
            

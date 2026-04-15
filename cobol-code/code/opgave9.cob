@@ -17,11 +17,11 @@
        FILE SECTION.
        FD FIL-KUNDER.
        01 KUNDE-OPL.
-           COPY "../data/KUNDER.cpy".
+           COPY "../copybooks/KUNDER.cpy".
        
        FD FIL-KONTI.
        01 KONTO-REKORD.
-           COPY "../data/KONTOOPL.cpy".
+           COPY "../copybooks/KONTOOPL.cpy".
 
        FD FIL-OUT.
        01 KUNDEKONTO.
@@ -33,7 +33,7 @@
        01 IX       PIC 9(2) VALUE 0.
        01 NUM-KONTI PIC 9(2) VALUE 0.
        01 KONTO-ARRAY OCCURS 0 TO 50 TIMES DEPENDING ON ARR-SIZE.
-           COPY "../data/KONTOOPL.cpy".
+           COPY "../copybooks/KONTOOPL.cpy".
 
        01 FORMAT-FIELDS.
            05 FIELD-1 PIC X(50).

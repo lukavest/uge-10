@@ -6,7 +6,7 @@
        02 REG-NR       PIC X(6).
        02 BELØB        PIC Z(11).99.
        02 VALUTA       PIC X(4).
-       02 TRANSAKTIONSTYPE PIC X(20).
+       02 TRANS-TYPE   PIC X(20).
        02 BUTIK        PIC X(20).
        02 TIDSPUNKT    PIC X(26).
        

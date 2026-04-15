@@ -5,7 +5,7 @@
            WORKING-STORAGE SECTION. 
       
            01 KUNDEOPL.
-               COPY "KUNDER.cpy".
+               COPY "../copybooks/KUNDER.cpy".
 
        PROCEDURE DIVISION.
            PERFORM FILL-VALUES.

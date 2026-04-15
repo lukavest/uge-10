@@ -11,7 +11,7 @@
        FILE SECTION.
        FD KUNDE-FIL.
        01 KUNDE-OPL.
-           COPY "../data/KUNDER.cpy".
+           COPY "../copybooks/KUNDER.cpy".
 
        WORKING-STORAGE SECTION. 
        01 EOF-FLAG PIC X VALUE "N".

@@ -17,11 +17,11 @@
        file section.
        fd fil-kunder.
        01 kunde-opl.
-           copy "../data/KUNDER.cpy".
+           copy "../copybooks/KUNDER.cpy".
        
        fd fil-konti.
        01 konto-rekord.
-           copy "../data/KONTOOPL.cpy".
+           copy "../copybooks/KONTOOPL.cpy".
 
        fd fil-out.
        01 kundekonto.
