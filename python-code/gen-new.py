@@ -43,6 +43,23 @@ TRANSACTION_TYPES = ["Indbetaling", "Udbetaling", "Overførsel"]
 
 ENCODING =  "utf-8"  # Windows-1252 encoding for Danish characters
 
+def pad_to_byte_length(value: str, byte_width: int, encoding: str = ENCODING, pad_char: str = " ") -> bytes:
+    """Encode value and pad/truncate to exactly byte_width bytes."""
+    encoded = value.encode(encoding)
+    if len(encoded) > byte_width:
+        # Truncate safely without splitting a multi-byte character
+        encoded = encoded[:byte_width]
+        # Walk back if we cut a mid-sequence byte (for safety)
+        while len(encoded) > 0:
+            try:
+                encoded.decode(encoding)
+                break
+            except UnicodeDecodeError:
+                encoded = encoded[:-1]
+    pad_bytes = byte_width - len(encoded)
+    return encoded + (pad_char.encode(encoding) * pad_bytes)
+
+
 # Funktion til generering af en fødselsdato og CPR-lignende nummer
 def generate_cpr():
     start_date = datetime.date(1950, 1, 1)
@@ -109,7 +126,7 @@ def gen_data():
     bank_registrations = [bank[0] for bank in bank_data]  # Liste med alle registreringsnumre fra bankfilen
 
     # with open(TRANSACTION_FILE, "w") as file:
-    with open(TRANSACTION_FILE, "w", encoding=ENCODING) as file:
+    with open(TRANSACTION_FILE, "wb", encoding=ENCODING) as file:
         for i in range(1, NUM_CUSTOMERS + 1):  # Loop over kunder
             cpr, fødselsdato = generate_cpr()  # Generér CPR og fødselsdato
             konto_nummer = generate_account_number()  # Generér kontonummer
@@ -117,6 +134,8 @@ def gen_data():
             navn = f"{random.choice(FIRST_NAMES)} {random.choice(LAST_NAMES)}"  # Fiktivt navn
             adresse = generate_address()  # Generér adresse
 
+            recs_base = [(cpr, 15), (navn, 30), (adresse, 50), (fødselsdato, 11), (konto_nummer, 14), (reg_nummer, 6)]
+            
             # Generér et tilfældigt antal transaktioner for denne kunde
             num_transactions = random.randint(1, MAX_TRANSACTIONS_PER_CUSTOMER)
             for _ in range(num_transactions):  # Loop over kundens transaktioner
@@ -128,36 +147,47 @@ def gen_data():
                 butik = random.choice(STORES)  # Tilfældig butik
                 timestamp = generate_transaction_timestamp()  # Timestamp i formatet YYYY-MM-DD-HH.MM.SS.MMMMMM
 
+                recs_full = recs_base + [(transaktions_beløb, 14), (valutakode, 4), (transaktions_type, 20), (butik, 20), (timestamp, 26)]
+                
+                record = ""
+                for value, width in recs_full:
+                    record += pad_to_byte_length(str(value), width)
+                    
+                file.write(record)
+                
                 # Formatér feltet til faste kolonner
-                record = (
-                    f"{cpr:<15}"             # Kundenummer (CPR-format)
-                    f"{navn:<30}"            # Navn
-                    f"{adresse:<50}"         # Adresse
-                    f"{fødselsdato:<11}"     # Fødselsdato (10 tegn + 1 mellemrum)
-                    f"{konto_nummer:<14}"    # Kontonummer (12 tegn + 2 mellemrum)
-                    f"{reg_nummer:<6}"       # Registreringsnummer
-                    f"{transaktions_beløb:>14.2f}"    # Højrestil beløb
-                    # f"{beløb_int:>11d}{beløb_frac:02}"   # Beløb som heltal + 2 decimaler
-                    f"{valutakode:<4}"       # Valutakode
-                    f"{transaktions_type:<20}"  # Transaktionstype
-                    f"{butik:<20}"           # Butik
-                    f"{timestamp:<26}"       # Timestamp
-                )
-                file.write(record + "\n")  # Skriv til fil og tilføj ny linje
+                # record = (
+                #     f"{cpr:<15}"             # Kundenummer (CPR-format)
+                #     f"{navn:<30}"            # Navn
+                #     f"{adresse:<50}"         # Adresse
+                #     f"{fødselsdato:<11}"     # Fødselsdato (10 tegn + 1 mellemrum)
+                #     f"{konto_nummer:<14}"    # Kontonummer (12 tegn + 2 mellemrum)
+                #     f"{reg_nummer:<6}"       # Registreringsnummer
+                #     f"{transaktions_beløb:>14.2f}"    # Højrestil beløb
+                #     # f"{beløb_int:>11d}{beløb_frac:02}"   # Beløb som heltal + 2 decimaler
+                #     f"{valutakode:<4}"       # Valutakode
+                #     f"{transaktions_type:<20}"  # Transaktionstype
+                #     f"{butik:<20}"           # Butik
+                #     f"{timestamp:<26}"       # Timestamp
+                # )
+                # file.write(record + "\n")  # Skriv til fil og tilføj ny linje
 
     print(f"Dataset med {NUM_CUSTOMERS} kunder og op til {MAX_TRANSACTIONS_PER_CUSTOMER * NUM_CUSTOMERS} transaktioner er genereret i filen '{TRANSACTION_FILE}'")
     print(f"Bankdata genereret i filen '{BANK_FILE}'")
     
     
-# gen_data()
-TEST_FILE = os.path.join(dir_path, "../cobol-code/data/TST.txt")
-# BANK_FILE = "../cobol-code/data/Banker.txt"
+gen_data()
 
-def tst_data():
-    with open(TEST_FILE, "w", encoding=ENCODING) as file:
-        for butik in STORES:
-            record = f"{butik:<20}"  # Butik
-            file.write(record + "\n")  # Skriv til fil og tilføj ny linje
+# TEST_FILE = os.path.join(dir_path, "../cobol-code/data/TST.txt")
+
+# def tst_data():
+#     with open(TEST_FILE, "wb") as file:
+#         for i in range(10):
+#             butik = STORES[i % len(STORES)]
+#             ttype = TRANSACTION_TYPES[i % len(TRANSACTION_TYPES)]
+#             record = pad_to_byte_length(butik, 20) + pad_to_byte_length(ttype, 20)  # Butik + Transaktionstype
+#             # record = f"{butik:<20}"  # Butik
+#             file.write(record)  # Skriv til fil og tilføj ny linje
             
             
-tst_data()
+# tst_data()

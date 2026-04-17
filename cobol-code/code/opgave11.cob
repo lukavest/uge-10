@@ -21,14 +21,9 @@
            02 USD PIC 9V99 VALUE 6.34.
        01 PRETTY-NUMERIC   PIC -ZZZ,ZZZ,ZZ9.99.
        01 TMP-NUMERIC      PIC S9(10)V99.
-
        01 CURR-KONTO-ID PIC X(14).
-      *01 CURR-NAVN     PIC X(30).
-
-
        
        01 IX   PIC 99 VALUE 1.
-       
        01 NUM-KUNDER PIC 9(04) VALUE 0.
        
        01 KUNDE-ARR OCCURS 0 TO 1000 TIMES
@@ -64,46 +59,60 @@
            02 FELT-UD      PIC -ZZZ,ZZZ,ZZ9.99.
 
        PROCEDURE DIVISION.
-           
-           PERFORM ITER-TRANS
-           SORT KUNDE-ARR DESCENDING SALDO OF KUNDE-ARR
-
-           DISPLAY NUM-KUNDER " kunder"
-           DISPLAY "Top kunder:"
-           
-           PERFORM VARYING IX FROM 1 BY 1 UNTIL IX > TOP-N
-               MOVE SALDO OF KUNDE-ARR(IX) TO PRETTY-NUMERIC
-               DISPLAY KONTO-ID OF KUNDE-ARR(IX)
-                       NAVN     OF KUNDE-ARR(IX)
-                       PRETTY-NUMERIC
-           END-PERFORM
-           
-           DISPLAY "Maaned   Indbetalinger (DKK) Udbetalinger (DKK)"
-           PERFORM VARYING IX FROM 1 BY 1 UNTIL IX > 12
-               MOVE IX TO FELT-MÅNED OF MÅNED-UDSKRIFT
-               MOVE TOTAL-IND OF MÅNED-ARR(IX) 
-                  TO FELT-IND OF MÅNED-UDSKRIFT
-               MOVE TOTAL-UD  OF MÅNED-ARR(IX) 
-                  TO FELT-UD  OF MÅNED-UDSKRIFT
-               DISPLAY MÅNED-UDSKRIFT
-           END-PERFORM
-      *    DISPLAY NUM-BUTIK " Butik typer"
-           DISPLAY "Butik    Antal transaktioner"
-           PERFORM VARYING B-IX FROM 1 BY 1 UNTIL B-IX > NUM-BUTIK
-               MOVE OMSÆTNING OF BUTIK-ARR(B-IX) TO PRETTY-NUMERIC
-               DISPLAY BUTIK-T OF BUTIK-ARR(B-IX) 
-                   TÆLLER OF BUTIK-ARR(B-IX)
-                   PRETTY-NUMERIC
-           END-PERFORM
-           
-           SORT BUTIK-ARR DESCENDING OMSÆTNING OF BUTIK-ARR
-           DISPLAY "Top butikker"
-           DISPLAY "Butik    Omsætning"
-           PERFORM VARYING B-IX FROM 1 BY 1 UNTIL B-IX > 5
-               MOVE OMSÆTNING OF BUTIK-ARR(B-IX) TO PRETTY-NUMERIC
-               DISPLAY BUTIK-T OF BUTIK-ARR(B-IX) PRETTY-NUMERIC
-           END-PERFORM
+           PERFORM TST
+      *    DISPLAY "Beginning"
+      *    PERFORM ITER-TRANS
+      *    DISPLAY "Iterating done"
+      *    SORT KUNDE-ARR DESCENDING SALDO OF KUNDE-ARR
+      *    
+      *    DISPLAY NUM-KUNDER " kunder"
+      *    DISPLAY "Top kunder:"
+      *    
+      *    PERFORM VARYING IX FROM 1 BY 1 UNTIL IX > TOP-N
+      *        MOVE SALDO OF KUNDE-ARR(IX) TO PRETTY-NUMERIC
+      *        DISPLAY KONTO-ID OF KUNDE-ARR(IX)
+      *                NAVN     OF KUNDE-ARR(IX)
+      *                PRETTY-NUMERIC
+      *    END-PERFORM
+      *    
+      *    DISPLAY "Måned   Indbetalinger (DKK) Udbetalinger (DKK)"
+      *    PERFORM VARYING IX FROM 1 BY 1 UNTIL IX > 12
+      *        MOVE IX TO FELT-MÅNED OF MÅNED-UDSKRIFT
+      *        MOVE TOTAL-IND OF MÅNED-ARR(IX) 
+      *           TO FELT-IND OF MÅNED-UDSKRIFT
+      *        MOVE TOTAL-UD  OF MÅNED-ARR(IX) 
+      *           TO FELT-UD  OF MÅNED-UDSKRIFT
+      *        DISPLAY MÅNED-UDSKRIFT
+      *    END-PERFORM
+      *    DISPLAY "Butik    Antal transaktioner"
+      *    PERFORM VARYING B-IX FROM 1 BY 1 UNTIL B-IX > NUM-BUTIK
+      *        MOVE OMSÆTNING OF BUTIK-ARR(B-IX) TO PRETTY-NUMERIC
+      *        DISPLAY BUTIK-T OF BUTIK-ARR(B-IX) 
+      *            TÆLLER OF BUTIK-ARR(B-IX)
+      *            PRETTY-NUMERIC
+      *    END-PERFORM
+      *    
+      *    SORT BUTIK-ARR DESCENDING OMSÆTNING OF BUTIK-ARR
+      *    DISPLAY "Top butikker"
+      *    DISPLAY "Butik    Omsætning"
+      *    PERFORM VARYING B-IX FROM 1 BY 1 UNTIL B-IX > 5
+      *        MOVE OMSÆTNING OF BUTIK-ARR(B-IX) TO PRETTY-NUMERIC
+      *        DISPLAY BUTIK-T OF BUTIK-ARR(B-IX) PRETTY-NUMERIC
+      *    END-PERFORM
            STOP RUN.
+
+       TST.
+           OPEN INPUT FIL-TRANS
+           PERFORM 10 TIMES
+           READ FIL-TRANS
+           DISPLAY "'"CPR"' " "'"ADRESSE"' " 
+                   "'"FØDSELSDATO"' " "'"KONTO-ID OF TRANSAKTION"' "
+                   "'"REG-NR"' " "'"BELØB"' "
+                   "'"VALUTA"' " "'"TRANS-TYPE"' "
+                   "'"BUTIK"' " "'"TIDSPUNKT"' "
+           END-PERFORM
+
+           CLOSE FIL-TRANS.
 
        ITER-TRANS.
            OPEN INPUT FIL-TRANS
@@ -135,7 +144,9 @@
            ADD 1 TO NUM-KUNDER
            MOVE CURR-KONTO-ID    TO KONTO-ID OF KUNDE-ARR(NUM-KUNDER)
            MOVE NAVN OF TRANSAKTION TO NAVN  OF KUNDE-ARR(NUM-KUNDER)
-           MOVE 50000               TO SALDO OF KUNDE-ARR(NUM-KUNDER).
+           MOVE 50000               TO SALDO OF KUNDE-ARR(NUM-KUNDER)
+           
+           DISPLAY NUM-KUNDER CURR-KONTO-ID NAVN OF TRANSAKTION.
 
        PROCESS-TRANSACTION.
            MOVE BELØB OF TRANSAKTION TO TMP-NUMERIC
@@ -163,10 +174,8 @@
                AT END
                    ADD 1 TO NUM-BUTIK
                    MOVE BUTIK TO BUTIK-T OF BUTIK-ARR(NUM-BUTIK)
-                   
                    MOVE FUNCTION ABS(TMP-NUMERIC) 
                        TO OMSÆTNING OF BUTIK-ARR(NUM-BUTIK)
-                   
                WHEN BUTIK-T OF BUTIK-ARR(B-IX) = BUTIK
                    ADD 1 TO TÆLLER OF BUTIK-ARR(B-IX)
                    ADD FUNCTION ABS(TMP-NUMERIC) 

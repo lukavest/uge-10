@@ -1,100 +1,100 @@
-0001Danske Bank                   Hovedgaden 253, 4700 København                    +45 49349482   kontakt@danskebank.dk                   
-0002Sydbank                       Søndergade 191, 2100 Odense                       +45 94809245   kontakt@sydbank.dk                      
-0003Jyske Bank                    Nørreport 121A, 6700 Odense                       +45 98400944   kontakt@jyskebank.dk                    
-0004Jyske Bank                    Østerbrogade 258A, 9000 Vejle                     +45 53034112   kontakt@jyskebank.dk                    
-0005Sydbank                       Hovedgaden 370, 7100 Randers                      +45 23814346   kontakt@sydbank.dk                      
-0006Sydbank                       Strandvejen 285C, 5000 Odense                     +45 72515177   kontakt@sydbank.dk                      
-0007Jyske Bank                    Amagerbrogade 13B, 7100 Randers                   +45 89340004   kontakt@jyskebank.dk                    
-0008Jyske Bank                    Nørreport 769A, 9000 Randers                      +45 21030412   kontakt@jyskebank.dk                    
-0009Handelsbanken                 Nørreport 512A, 3000 Odense                       +45 71780174   kontakt@handelsbanken.dk                
-0010Sydbank                       Østerbrogade 574A, 8000 København                 +45 60165537   kontakt@sydbank.dk                      
-0011Jyske Bank                    Strandvejen 22A, 3000 Randers                     +45 92946687   kontakt@jyskebank.dk                    
-0012Jyske Bank                    Østerbrogade 715B, 4000 Aarhus                    +45 73913569   kontakt@jyskebank.dk                    
-0013Spar Nord Bank                Frederiks Allé 805, 8000 Roskilde                 +45 50195490   kontakt@sparnordbank.dk                 
-0014Jyske Bank                    Østerbrogade 545C, 4700 Randers                   +45 89030590   kontakt@jyskebank.dk                    
-0015Danske Bank                   Vesterbrogade 923, 5000 Odense                    +45 91987274   kontakt@danskebank.dk                   
-0016Nykredit Bank                 Vesterbrogade 142, 3000 Aalborg                   +45 22341636   kontakt@nykreditbank.dk                 
-0017Jyske Bank                    Frederiks Allé 551A, 8900 København               +45 35873755   kontakt@jyskebank.dk                    
-0018Danske Bank                   Søndergade 402C, 6700 Vejle                       +45 89321725   kontakt@danskebank.dk                   
-0019Nordea                        Frederiks Allé 974C, 4700 Aarhus                  +45 22479438   kontakt@nordea.dk                       
-0020Jyske Bank                    Strandvejen 114C, 8900 København                  +45 22368949   kontakt@jyskebank.dk                    
-0021Spar Nord Bank                Vesterbrogade 482C, 4700 Odense                   +45 15716561   kontakt@sparnordbank.dk                 
-0022Jyske Bank                    Hovedgaden 381A, 5000 Randers                     +45 10060364   kontakt@jyskebank.dk                    
-0023Nordea                        Hovedgaden 532C, 8000 Aalborg                     +45 17631146   kontakt@nordea.dk                       
-0024Nordea                        Søndergade 467B, 9000 Randers                     +45 48065338   kontakt@nordea.dk                       
-0025Nykredit Bank                 Østerbrogade 610A, 5000 Randers                   +45 52834282   kontakt@nykreditbank.dk                 
-0026Handelsbanken                 Amagerbrogade 134B, 3000 Næstved                  +45 94686106   kontakt@handelsbanken.dk                
-0027Nykredit Bank                 Frederiks Allé 280B, 8000 Roskilde                +45 51098470   kontakt@nykreditbank.dk                 
-0028Handelsbanken                 Hovedgaden 948B, 7100 Randers                     +45 46446437   kontakt@handelsbanken.dk                
-0029Arbejdernes Landsbank         Nørreport 432C, 4700 Vejle                        +45 67621047   kontakt@arbejderneslandsbank.dk         
-0030Handelsbanken                 Nørreport 295B, 6700 Helsingør                    +45 28108958   kontakt@handelsbanken.dk                
-0031Jyske Bank                    Strandvejen 357C, 4000 København                  +45 64041040   kontakt@jyskebank.dk                    
-0032Handelsbanken                 Søndergade 88, 4000 Aarhus                        +45 17985107   kontakt@handelsbanken.dk                
-0033Handelsbanken                 Hovedgaden 597B, 4700 København                   +45 98726142   kontakt@handelsbanken.dk                
-0034Sydbank                       Hovedgaden 133A, 6700 Esbjerg                     +45 97545731   kontakt@sydbank.dk                      
-0035Spar Nord Bank                Amagerbrogade 366C, 2100 København                +45 58624310   kontakt@sparnordbank.dk                 
-0036Nykredit Bank                 Strandvejen 622B, 7100 Helsingør                  +45 45907797   kontakt@nykreditbank.dk                 
-0037Spar Nord Bank                Søndergade 553C, 5000 Vejle                       +45 56271041   kontakt@sparnordbank.dk                 
-0038Danske Bank                   Amagerbrogade 713, 5000 Vejle                     +45 16584049   kontakt@danskebank.dk                   
-0039Jyske Bank                    Frederiks Allé 371C, 7100 Randers                 +45 71253806   kontakt@jyskebank.dk                    
-0040Nordea                        Vesterbrogade 130, 8000 Helsingør                 +45 41699639   kontakt@nordea.dk                       
-0041Handelsbanken                 Amagerbrogade 952, 7100 Aarhus                    +45 26750681   kontakt@handelsbanken.dk                
-0042Arbejdernes Landsbank         Frederiks Allé 470C, 4000 Odense                  +45 46534999   kontakt@arbejderneslandsbank.dk         
-0043Danske Bank                   Frederiks Allé 232A, 4000 Vejle                   +45 65860502   kontakt@danskebank.dk                   
-0044Nordea                        Nørreport 871A, 8000 Roskilde                     +45 49183846   kontakt@nordea.dk                       
-0045Danske Bank                   Vesterbrogade 179A, 5000 København                +45 13710970   kontakt@danskebank.dk                   
-0046Handelsbanken                 Søndergade 594, 3000 Aalborg                      +45 83129106   kontakt@handelsbanken.dk                
-0047Arbejdernes Landsbank         Frederiks Allé 919C, 6700 Næstved                 +45 52823911   kontakt@arbejderneslandsbank.dk         
-0048Sydbank                       Østerbrogade 805C, 4700 Randers                   +45 77266013   kontakt@sydbank.dk                      
-0049Jyske Bank                    Søndergade 632B, 5000 Næstved                     +45 72576353   kontakt@jyskebank.dk                    
-0050Handelsbanken                 Hovedgaden 763C, 3000 Næstved                     +45 64607629   kontakt@handelsbanken.dk                
-0051Nordea                        Østerbrogade 685A, 3000 Roskilde                  +45 90910213   kontakt@nordea.dk                       
-0052Handelsbanken                 Hovedgaden 549A, 7100 København                   +45 88364993   kontakt@handelsbanken.dk                
-0053Spar Nord Bank                Hovedgaden 980C, 5000 København                   +45 54531429   kontakt@sparnordbank.dk                 
-0054Nykredit Bank                 Hovedgaden 235A, 7100 Esbjerg                     +45 53939471   kontakt@nykreditbank.dk                 
-0055Nykredit Bank                 Vesterbrogade 450A, 8900 København                +45 65358738   kontakt@nykreditbank.dk                 
-0056Spar Nord Bank                Vesterbrogade 915A, 5000 Næstved                  +45 20693391   kontakt@sparnordbank.dk                 
-0057Arbejdernes Landsbank         Strandvejen 927A, 2100 Randers                    +45 37059787   kontakt@arbejderneslandsbank.dk         
-0058Nordea                        Østerbrogade 857C, 5000 Vejle                     +45 38376414   kontakt@nordea.dk                       
-0059Spar Nord Bank                Vesterbrogade 471, 8900 Odense                    +45 35101905   kontakt@sparnordbank.dk                 
-0060Nykredit Bank                 Østerbrogade 449C, 3000 Odense                    +45 89163072   kontakt@nykreditbank.dk                 
-0061Spar Nord Bank                Nørreport 946A, 8900 Randers                      +45 48281890   kontakt@sparnordbank.dk                 
-0062Nykredit Bank                 Hovedgaden 856B, 3000 Helsingør                   +45 70104715   kontakt@nykreditbank.dk                 
-0063Spar Nord Bank                Søndergade 920C, 4000 Aalborg                     +45 46478460   kontakt@sparnordbank.dk                 
-0064Nordea                        Frederiks Allé 802A, 3000 Odense                  +45 95831920   kontakt@nordea.dk                       
-0065Spar Nord Bank                Søndergade 500, 2100 Odense                       +45 85595692   kontakt@sparnordbank.dk                 
-0066Nordea                        Hovedgaden 110, 6700 Esbjerg                      +45 83454248   kontakt@nordea.dk                       
-0067Nordea                        Nørreport 649, 8900 Esbjerg                       +45 73364589   kontakt@nordea.dk                       
-0068Nykredit Bank                 Hovedgaden 884A, 4700 Aarhus                      +45 77208660   kontakt@nykreditbank.dk                 
-0069Sydbank                       Vesterbrogade 821, 6700 Esbjerg                   +45 92587616   kontakt@sydbank.dk                      
-0070Handelsbanken                 Amagerbrogade 385B, 3000 Odense                   +45 44177509   kontakt@handelsbanken.dk                
-0071Spar Nord Bank                Østerbrogade 451, 8900 Roskilde                   +45 64302351   kontakt@sparnordbank.dk                 
-0072Nordea                        Hovedgaden 43C, 7100 Aalborg                      +45 31703712   kontakt@nordea.dk                       
-0073Nordea                        Strandvejen 462B, 4000 Esbjerg                    +45 45216249   kontakt@nordea.dk                       
-0074Spar Nord Bank                Østerbrogade 968A, 9000 Næstved                   +45 45397185   kontakt@sparnordbank.dk                 
-0075Arbejdernes Landsbank         Søndergade 674, 5000 Roskilde                     +45 97329290   kontakt@arbejderneslandsbank.dk         
-0076Sydbank                       Strandvejen 299B, 2100 Aarhus                     +45 51028313   kontakt@sydbank.dk                      
-0077Spar Nord Bank                Vesterbrogade 780A, 7100 Randers                  +45 93035615   kontakt@sparnordbank.dk                 
-0078Arbejdernes Landsbank         Søndergade 877B, 8900 Randers                     +45 55961894   kontakt@arbejderneslandsbank.dk         
-0079Danske Bank                   Nørreport 162C, 2100 Helsingør                    +45 69317297   kontakt@danskebank.dk                   
-0080Danske Bank                   Strandvejen 811A, 2100 Aalborg                    +45 95293474   kontakt@danskebank.dk                   
-0081Handelsbanken                 Strandvejen 141, 5000 Vejle                       +45 35654957   kontakt@handelsbanken.dk                
-0082Danske Bank                   Nørreport 33A, 4700 København                     +45 47427924   kontakt@danskebank.dk                   
-0083Sydbank                       Hovedgaden 457B, 5000 Næstved                     +45 88773269   kontakt@sydbank.dk                      
-0084Nordea                        Østerbrogade 255A, 7100 Odense                    +45 76912348   kontakt@nordea.dk                       
-0085Spar Nord Bank                Vesterbrogade 588C, 5000 Roskilde                 +45 65378702   kontakt@sparnordbank.dk                 
-0086Spar Nord Bank                Søndergade 161, 9000 Helsingør                    +45 13214543   kontakt@sparnordbank.dk                 
-0087Nordea                        Østerbrogade 768C, 3000 Randers                   +45 71960620   kontakt@nordea.dk                       
-0088Jyske Bank                    Vesterbrogade 222, 8900 Helsingør                 +45 72010102   kontakt@jyskebank.dk                    
-0089Spar Nord Bank                Nørreport 423, 4700 Esbjerg                       +45 70937474   kontakt@sparnordbank.dk                 
-0090Spar Nord Bank                Strandvejen 191B, 6700 Odense                     +45 11854134   kontakt@sparnordbank.dk                 
-0091Danske Bank                   Frederiks Allé 200C, 3000 Odense                  +45 72127025   kontakt@danskebank.dk                   
-0092Nykredit Bank                 Østerbrogade 279C, 9000 Næstved                   +45 90955069   kontakt@nykreditbank.dk                 
-0093Spar Nord Bank                Østerbrogade 923B, 9000 Vejle                     +45 12885671   kontakt@sparnordbank.dk                 
-0094Jyske Bank                    Vesterbrogade 226B, 4700 Roskilde                 +45 40502497   kontakt@jyskebank.dk                    
-0095Nordea                        Østerbrogade 643B, 2100 Helsingør                 +45 23433664   kontakt@nordea.dk                       
-0096Jyske Bank                    Vesterbrogade 315B, 9000 Aarhus                   +45 92341595   kontakt@jyskebank.dk                    
-0097Nordea                        Strandvejen 33B, 6700 Roskilde                    +45 70698020   kontakt@nordea.dk                       
-0098Nykredit Bank                 Søndergade 301C, 8000 Esbjerg                     +45 10603273   kontakt@nykreditbank.dk                 
-0099Jyske Bank                    Vesterbrogade 569B, 3000 Næstved                  +45 79129839   kontakt@jyskebank.dk                    
-0100Nykredit Bank                 Søndergade 988A, 2100 Aarhus                      +45 58807409   kontakt@nykreditbank.dk                 
+0001Jyske Bank                    Strandvejen 493B, 2100 Vejle                      +45 17247202   kontakt@jyskebank.dk                    
+0002Sydbank                       SÃ¸ndergade 660, 7100 Aarhus                       +45 99346437   kontakt@sydbank.dk                      
+0003Handelsbanken                 NÃ¸rreport 52, 8000 KÃ¸benhavn                      +45 44297277   kontakt@handelsbanken.dk                
+0004Arbejdernes Landsbank         Amagerbrogade 731A, 6700 Randers                  +45 77648596   kontakt@arbejderneslandsbank.dk         
+0005Handelsbanken                 SÃ¸ndergade 497C, 3000 HelsingÃ¸r                   +45 31813489   kontakt@handelsbanken.dk                
+0006Arbejdernes Landsbank         Amagerbrogade 152C, 4700 NÃ¦stved                  +45 77560088   kontakt@arbejderneslandsbank.dk         
+0007Danske Bank                   SÃ¸ndergade 194, 8900 Odense                       +45 76123888   kontakt@danskebank.dk                   
+0008Spar Nord Bank                Frederiks AllÃ© 945C, 6700 Aarhus                  +45 53458621   kontakt@sparnordbank.dk                 
+0009Danske Bank                   NÃ¸rreport 252C, 6700 Aarhus                       +45 61824591   kontakt@danskebank.dk                   
+0010Handelsbanken                 Strandvejen 822B, 5000 KÃ¸benhavn                  +45 11082798   kontakt@handelsbanken.dk                
+0011Arbejdernes Landsbank         Ã˜sterbrogade 675A, 2100 Vejle                     +45 69859936   kontakt@arbejderneslandsbank.dk         
+0012Nykredit Bank                 Ã˜sterbrogade 416, 8900 Aarhus                     +45 77122903   kontakt@nykreditbank.dk                 
+0013Spar Nord Bank                Strandvejen 884C, 9000 Esbjerg                    +45 16659737   kontakt@sparnordbank.dk                 
+0014Jyske Bank                    Strandvejen 48A, 4700 Odense                      +45 12377851   kontakt@jyskebank.dk                    
+0015Danske Bank                   Vesterbrogade 87, 5000 Roskilde                   +45 39071422   kontakt@danskebank.dk                   
+0016Sydbank                       Frederiks AllÃ© 297C, 5000 Randers                 +45 52173490   kontakt@sydbank.dk                      
+0017Sydbank                       Amagerbrogade 231B, 2100 Aalborg                  +45 94560594   kontakt@sydbank.dk                      
+0018Danske Bank                   Amagerbrogade 884B, 8900 HelsingÃ¸r                +45 15404143   kontakt@danskebank.dk                   
+0019Jyske Bank                    Vesterbrogade 439A, 8000 Randers                  +45 75185977   kontakt@jyskebank.dk                    
+0020Spar Nord Bank                Ã˜sterbrogade 170C, 3000 Odense                    +45 18127729   kontakt@sparnordbank.dk                 
+0021Nordea                        Vesterbrogade 566A, 6700 KÃ¸benhavn                +45 54837346   kontakt@nordea.dk                       
+0022Sydbank                       Hovedgaden 211, 8900 Aarhus                       +45 15577638   kontakt@sydbank.dk                      
+0023Danske Bank                   Ã˜sterbrogade 712, 6700 KÃ¸benhavn                  +45 49590751   kontakt@danskebank.dk                   
+0024Danske Bank                   Vesterbrogade 935, 8000 Roskilde                  +45 94505544   kontakt@danskebank.dk                   
+0025Sydbank                       NÃ¸rreport 583B, 3000 Roskilde                     +45 69474251   kontakt@sydbank.dk                      
+0026Handelsbanken                 SÃ¸ndergade 222A, 4000 Vejle                       +45 46530594   kontakt@handelsbanken.dk                
+0027Nordea                        Hovedgaden 694A, 3000 Roskilde                    +45 46671141   kontakt@nordea.dk                       
+0028Handelsbanken                 NÃ¸rreport 110, 9000 Esbjerg                       +45 39886020   kontakt@handelsbanken.dk                
+0029Nykredit Bank                 Strandvejen 695, 4000 Aarhus                      +45 76767934   kontakt@nykreditbank.dk                 
+0030Spar Nord Bank                SÃ¸ndergade 726A, 6700 Aarhus                      +45 70827692   kontakt@sparnordbank.dk                 
+0031Jyske Bank                    NÃ¸rreport 600, 6700 Aarhus                        +45 76414609   kontakt@jyskebank.dk                    
+0032Nordea                        Vesterbrogade 539C, 3000 Roskilde                 +45 97732675   kontakt@nordea.dk                       
+0033Arbejdernes Landsbank         Vesterbrogade 76A, 9000 Esbjerg                   +45 19831354   kontakt@arbejderneslandsbank.dk         
+0034Nordea                        NÃ¸rreport 334A, 9000 HelsingÃ¸r                    +45 89524502   kontakt@nordea.dk                       
+0035Jyske Bank                    SÃ¸ndergade 638, 9000 KÃ¸benhavn                    +45 65889761   kontakt@jyskebank.dk                    
+0036Arbejdernes Landsbank         NÃ¸rreport 968B, 8000 Aalborg                      +45 63024237   kontakt@arbejderneslandsbank.dk         
+0037Arbejdernes Landsbank         Strandvejen 107, 3000 Aarhus                      +45 56168062   kontakt@arbejderneslandsbank.dk         
+0038Nordea                        Strandvejen 314B, 6700 KÃ¸benhavn                  +45 56373776   kontakt@nordea.dk                       
+0039Jyske Bank                    Frederiks AllÃ© 798, 5000 KÃ¸benhavn                +45 66238632   kontakt@jyskebank.dk                    
+0040Sydbank                       NÃ¸rreport 303C, 8000 Vejle                        +45 87121738   kontakt@sydbank.dk                      
+0041Nordea                        NÃ¸rreport 293C, 7100 Roskilde                     +45 91834748   kontakt@nordea.dk                       
+0042Sydbank                       Amagerbrogade 44C, 7100 Randers                   +45 45239749   kontakt@sydbank.dk                      
+0043Handelsbanken                 Vesterbrogade 522A, 8000 Randers                  +45 92172803   kontakt@handelsbanken.dk                
+0044Sydbank                       Ã˜sterbrogade 996B, 4700 HelsingÃ¸r                 +45 13182081   kontakt@sydbank.dk                      
+0045Handelsbanken                 Hovedgaden 733B, 9000 Randers                     +45 85507535   kontakt@handelsbanken.dk                
+0046Sydbank                       Vesterbrogade 758C, 4700 Esbjerg                  +45 99872317   kontakt@sydbank.dk                      
+0047Jyske Bank                    Frederiks AllÃ© 376C, 8000 Aarhus                  +45 12212058   kontakt@jyskebank.dk                    
+0048Jyske Bank                    NÃ¸rreport 556A, 7100 Odense                       +45 99099400   kontakt@jyskebank.dk                    
+0049Arbejdernes Landsbank         Hovedgaden 350A, 2100 NÃ¦stved                     +45 85825775   kontakt@arbejderneslandsbank.dk         
+0050Jyske Bank                    Vesterbrogade 63C, 4000 Randers                   +45 67752175   kontakt@jyskebank.dk                    
+0051Arbejdernes Landsbank         Hovedgaden 401B, 2100 Vejle                       +45 18005486   kontakt@arbejderneslandsbank.dk         
+0052Arbejdernes Landsbank         SÃ¸ndergade 956A, 7100 Randers                     +45 72947551   kontakt@arbejderneslandsbank.dk         
+0053Jyske Bank                    Vesterbrogade 810C, 3000 Randers                  +45 73987852   kontakt@jyskebank.dk                    
+0054Spar Nord Bank                Strandvejen 700B, 6700 KÃ¸benhavn                  +45 31509089   kontakt@sparnordbank.dk                 
+0055Nordea                        Frederiks AllÃ© 374, 9000 Roskilde                 +45 41563905   kontakt@nordea.dk                       
+0056Handelsbanken                 Amagerbrogade 441B, 4700 Aalborg                  +45 86881989   kontakt@handelsbanken.dk                
+0057Nykredit Bank                 SÃ¸ndergade 714A, 7100 Randers                     +45 26988112   kontakt@nykreditbank.dk                 
+0058Jyske Bank                    Hovedgaden 966B, 2100 Esbjerg                     +45 89403545   kontakt@jyskebank.dk                    
+0059Arbejdernes Landsbank         Strandvejen 691B, 7100 NÃ¦stved                    +45 20960165   kontakt@arbejderneslandsbank.dk         
+0060Arbejdernes Landsbank         SÃ¸ndergade 337A, 7100 Esbjerg                     +45 47505881   kontakt@arbejderneslandsbank.dk         
+0061Spar Nord Bank                Frederiks AllÃ© 834C, 6700 Esbjerg                 +45 62733135   kontakt@sparnordbank.dk                 
+0062Spar Nord Bank                Vesterbrogade 700, 7100 NÃ¦stved                   +45 55723981   kontakt@sparnordbank.dk                 
+0063Jyske Bank                    SÃ¸ndergade 785A, 9000 Odense                      +45 70423964   kontakt@jyskebank.dk                    
+0064Nordea                        NÃ¸rreport 864A, 3000 Vejle                        +45 34898025   kontakt@nordea.dk                       
+0065Sydbank                       Amagerbrogade 708, 4000 Odense                    +45 54902876   kontakt@sydbank.dk                      
+0066Nordea                        Frederiks AllÃ© 284, 4000 HelsingÃ¸r                +45 80767019   kontakt@nordea.dk                       
+0067Arbejdernes Landsbank         SÃ¸ndergade 764C, 8000 NÃ¦stved                     +45 36512248   kontakt@arbejderneslandsbank.dk         
+0068Sydbank                       Frederiks AllÃ© 657A, 5000 Randers                 +45 20515116   kontakt@sydbank.dk                      
+0069Spar Nord Bank                Hovedgaden 525B, 6700 Randers                     +45 63740346   kontakt@sparnordbank.dk                 
+0070Spar Nord Bank                Amagerbrogade 691C, 3000 KÃ¸benhavn                +45 11839584   kontakt@sparnordbank.dk                 
+0071Handelsbanken                 Frederiks AllÃ© 755B, 8900 Vejle                   +45 19591319   kontakt@handelsbanken.dk                
+0072Arbejdernes Landsbank         Strandvejen 972A, 8900 KÃ¸benhavn                  +45 58921693   kontakt@arbejderneslandsbank.dk         
+0073Jyske Bank                    SÃ¸ndergade 447, 5000 Roskilde                     +45 69336076   kontakt@jyskebank.dk                    
+0074Nordea                        SÃ¸ndergade 205B, 3000 KÃ¸benhavn                   +45 25489355   kontakt@nordea.dk                       
+0075Jyske Bank                    Amagerbrogade 934, 8900 HelsingÃ¸r                 +45 56418815   kontakt@jyskebank.dk                    
+0076Spar Nord Bank                NÃ¸rreport 722B, 2100 Randers                      +45 82622104   kontakt@sparnordbank.dk                 
+0077Handelsbanken                 Amagerbrogade 466, 4700 KÃ¸benhavn                 +45 14262147   kontakt@handelsbanken.dk                
+0078Nordea                        Vesterbrogade 929A, 2100 Aalborg                  +45 84694060   kontakt@nordea.dk                       
+0079Nordea                        Hovedgaden 656, 4000 Roskilde                     +45 57077486   kontakt@nordea.dk                       
+0080Handelsbanken                 Strandvejen 115, 3000 HelsingÃ¸r                   +45 39609342   kontakt@handelsbanken.dk                
+0081Nykredit Bank                 Hovedgaden 378A, 7100 Odense                      +45 37501456   kontakt@nykreditbank.dk                 
+0082Spar Nord Bank                Amagerbrogade 717C, 7100 Odense                   +45 53135529   kontakt@sparnordbank.dk                 
+0083Arbejdernes Landsbank         NÃ¸rreport 267A, 7100 Aalborg                      +45 36603171   kontakt@arbejderneslandsbank.dk         
+0084Arbejdernes Landsbank         SÃ¸ndergade 751C, 2100 Roskilde                    +45 50484060   kontakt@arbejderneslandsbank.dk         
+0085Nykredit Bank                 Vesterbrogade 563, 7100 Aarhus                    +45 93619574   kontakt@nykreditbank.dk                 
+0086Spar Nord Bank                SÃ¸ndergade 294B, 3000 Odense                      +45 74450295   kontakt@sparnordbank.dk                 
+0087Handelsbanken                 Vesterbrogade 694A, 5000 Esbjerg                  +45 90708869   kontakt@handelsbanken.dk                
+0088Nordea                        NÃ¸rreport 208C, 6700 NÃ¦stved                      +45 76091919   kontakt@nordea.dk                       
+0089Arbejdernes Landsbank         Strandvejen 453B, 3000 Aarhus                     +45 74093902   kontakt@arbejderneslandsbank.dk         
+0090Spar Nord Bank                Vesterbrogade 545B, 6700 Vejle                    +45 76721642   kontakt@sparnordbank.dk                 
+0091Jyske Bank                    Amagerbrogade 363A, 8000 Esbjerg                  +45 64622266   kontakt@jyskebank.dk                    
+0092Danske Bank                   NÃ¸rreport 685C, 4700 Aalborg                      +45 23836140   kontakt@danskebank.dk                   
+0093Nordea                        Strandvejen 459C, 3000 Aalborg                    +45 21461635   kontakt@nordea.dk                       
+0094Nykredit Bank                 NÃ¸rreport 719, 8000 Odense                        +45 34226362   kontakt@nykreditbank.dk                 
+0095Nordea                        Strandvejen 332, 4700 HelsingÃ¸r                   +45 32037773   kontakt@nordea.dk                       
+0096Spar Nord Bank                Hovedgaden 613A, 8000 NÃ¦stved                     +45 85360548   kontakt@sparnordbank.dk                 
+0097Nykredit Bank                 Ã˜sterbrogade 722C, 3000 HelsingÃ¸r                 +45 52059226   kontakt@nykreditbank.dk                 
+0098Nykredit Bank                 Frederiks AllÃ© 682A, 3000 Roskilde                +45 44722074   kontakt@nykreditbank.dk                 
+0099Arbejdernes Landsbank         Frederiks AllÃ© 995C, 5000 Odense                  +45 39526925   kontakt@arbejderneslandsbank.dk         
+0100Spar Nord Bank                Amagerbrogade 597B, 7100 Esbjerg                  +45 62199115   kontakt@sparnordbank.dk                 

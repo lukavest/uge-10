@@ -3,14 +3,14 @@
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
-      *    SELECT FIL-OUT ASSIGN TO "../data/HELLO.txt"
-      *        ORGANIZATION IS LINE SEQUENTIAL.
+           SELECT FIL-OUT ASSIGN TO "../data/HELLO.txt"
+               ORGANIZATION IS LINE SEQUENTIAL.
        DATA DIVISION.
 
-      *FILE SECTION.
-      *FD FIL-OUT.
-      *01 KONTOUDSKRIFT.
-      *    02 OUTPUT-TEXT PIC X(100).
+       FILE SECTION.
+       FD FIL-OUT.
+       01 UDSKRIFT.
+           02 OUTPUT-TEXT PIC X(100).
       
        WORKING-STORAGE SECTION. 
       *01 VAR-TEXT PIC N(30) USAGE NATIONAL.
@@ -19,13 +19,15 @@
       *01 A PIC S9(13) SIGN IS LEADING SEPARATE CHARACTER.
       *01 B PIC S9(13) SIGN IS LEADING SEPARATE CHARACTER.
       *01 C PIC S9(13) SIGN IS LEADING SEPARATE CHARACTER.
-       01 A PIC 9V99.
-       01 B PIC S9(10)V99.
-       01 C PIC -ZZZ,ZZZ,ZZ9.99.
+      *01 A PIC 9V99.
+      *01 B PIC S9(10)V99.
+      *01 C PIC -ZZZ,ZZZ,ZZ9.99.
       *01 P PIC Z(11)V99.
 
        PROCEDURE DIVISION.
-      *    DISPLAY "Danish characters: Æ, Ø, Å, æ, ø, å"
+           OPEN OUTPUT FIL-OUT
+
+      *    DISPLAY R"Danish characters: Æ, Ø, Å, æ, ø, å"
       *    MOVE "Danish characters: Æ, Ø, Å, æ, ø, å" TO VAR-TEXT
       *    DISPLAY VAR-TEXT
       *    OPEN OUTPUT FIL-OUT
@@ -33,17 +35,15 @@
       *        TO OUTPUT-TEXT
       *    WRITE KONTOUDSKRIFT
       *    CLOSE FIL-OUT
+           DISPLAY FUNCTION 
+               LENGTH("Danish characters: Æ, Ø, Å, æ, ø, å" )
+           DISPLAY FUNCTION 
+               LENGTH("Danish characters: X, X, X, X, X, X" )
 
-           MOVE "2.5" TO A
-           MOVE "500.60" TO B
-           DISPLAY A
-           DISPLAY B
+           MOVE "Danish characters: Æ, Ø, Å, æ, ø, å" 
+               TO OUTPUT-TEXT
+           WRITE UDSKRIFT
            
-      *    ADD A TO B GIVING C
-      *    MOVE FUNCTION SUM(A, B) TO C
-           MULTIPLY A BY B GIVING C
-           DISPLAY C
-           
-
-           
+           DISPLAY "Danish characters: Æ, Ø, Å, æ, ø, å"
+           CLOSE FIL-OUT
            STOP RUN.
